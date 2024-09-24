@@ -1,0 +1,1 @@
+.inputLabel{color:var(--color-gray-100);display:flex;align-items:center;gap:0 4px;font-size:12px}.inputLabelLarge{font-size:14px;line-height:1.71}.inputLabelLarge svg{width:14px;height:14px}.inputLabelDisabled{color:var(--color-gray-400);pointer-events:none;cursor:not-allowed}.asterisk{color:var(--color-error-red-accent)}.hint{color:var(--color-gray-500);cursor:pointer}

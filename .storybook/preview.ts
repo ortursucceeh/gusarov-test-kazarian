@@ -16,10 +16,6 @@ const preview: Preview = {
       default: "dark",
       values: [
         {
-          name: "light",
-          value: "#F0F0F0",
-        },
-        {
           name: "dark",
           value: "#1A1A1E",
         },

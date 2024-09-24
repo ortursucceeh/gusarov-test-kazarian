@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-CkxqCPlQ.js";import{c as l,S as s}from"./index-CPQLvZ3f.js";import{c as p}from"./createLucideIcon-DVDrDyUM.js";/**
+ * @license lucide-react v0.445.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=p("Info",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"M12 16v-4",key:"1dtifu"}],["path",{d:"M12 8h.01",key:"e9boi3"}]]),m=r=>{const{id:a,size:t,withHint:n,required:o,disabled:i,label:d}=r;return e.jsxs("label",{htmlFor:a,className:l("inputLabel",{inputLabelLarge:[s.L,s.XL].includes(t),inputLabelDisabled:i}),children:[d,!i&&o&&e.jsx("i",{className:"asterisk",children:" *"}),n&&e.jsx(c,{size:12,className:"hint"})]})};m.__docgenInfo={description:"",methods:[],displayName:"InputLabel",props:{id:{required:!0,tsType:{name:"string"},description:""},size:{required:!1,tsType:{name:"SIZES"},description:""},required:{required:!1,tsType:{name:"boolean"},description:""},disabled:{required:!1,tsType:{name:"boolean"},description:""},withHint:{required:!1,tsType:{name:"boolean"},description:""},label:{required:!0,tsType:{name:"string"},description:""}}};export{m as I};
