@@ -5,10 +5,10 @@ import { InputGroup } from "../InputGroup/InputGroup";
 
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 
-import type { FormOptions } from "../../utils/types";
+import type { FormOptions } from "@/utils/types";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { SignInSchema, SignInSchemaType } from "../../utils/schemas";
-import { SIZES } from "../../utils/constants";
+import { SignInSchema, SignInSchemaType } from "@/utils/schemas";
+import { SIZES } from "@/utils/constants";
 import { CircleHelp, KeyRound, Mail } from "lucide-react";
 
 export const Form = () => {
@@ -75,7 +75,7 @@ export const Form = () => {
         )}
       />
 
-      <Button>Sign in</Button>
+      <Button type="submit">Sign in</Button>
     </form>
   );
 };

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { SIZES } from "../../utils/constants";
+import { SIZES } from "@/utils/constants";
 import styles from "./InputLabel.module.css";
 import { Info } from "lucide-react";
 

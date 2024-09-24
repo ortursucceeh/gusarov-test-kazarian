@@ -22,3 +22,20 @@
   --color-error-red-accent: #f04438;
   --color-error-shadow: #f044383d;
 }
+
+.light {
+  --color-bg-main: #fff;
+
+  --color-black: #fff;
+  --color-white: #000;
+
+  --color-gray-900: #fafafa;
+  --color-gray-800: #e4e4e7;
+  --color-gray-700: #d1d1d6;
+  --color-gray-600: #70707b;
+  --color-gray-500: #51525c;
+  --color-gray-400: #3f3f46;
+  --color-gray-300: #1a1a1e;
+  --color-gray-200: #131316;
+  --color-gray-100: #1e1e29;
+}

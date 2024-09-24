@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { SIZES } from "../../utils/constants";
+import { SIZES } from "@/utils/constants";
 import styles from "./InputAnnotation.module.css";
 
 type InputAnnotationProps = {

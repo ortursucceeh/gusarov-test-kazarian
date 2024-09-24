@@ -2,8 +2,8 @@ import { ChangeEvent, ReactNode } from "react";
 import styles from "./InputText.module.css";
 import { FieldError } from "react-hook-form";
 import clsx from "clsx";
-import { InputType } from "../../utils/types";
-import { SIZES } from "../../utils/constants";
+import { InputType } from "@/utils/types";
+import { SIZES } from "@/utils/constants";
 
 type InputTextProps = {
   id: string;
