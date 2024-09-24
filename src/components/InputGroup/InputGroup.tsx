@@ -24,7 +24,7 @@ type InputGroupProps = {
   isQuiet?: boolean;
   value: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  error?: FieldError | undefined;
+  error?: FieldError | string | undefined;
 
   text: string;
 };
