@@ -1,0 +1,31 @@
+.inputLabel {
+  color: var(--color-gray-100);
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.L {
+  font-size: 14px;
+  line-height: 1.71;
+
+  & svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.disabled {
+  color: var(--color-gray-400);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.asterisk {
+  color: var(--color-error-red-accent);
+}
+
+.hint {
+  color: var(--color-gray-500);
+  cursor: pointer;
+}
