@@ -1,0 +1,19 @@
+.inputAnnotation {
+  display: block;
+  color: var(--color-gray-400);
+  white-space: normal;
+}
+
+.L {
+  font-size: 14px;
+}
+
+.error {
+  color: var(--color-error-red);
+}
+
+.disabled {
+  color: var(--color-gray-700);
+  pointer-events: none;
+  cursor: not-allowed;
+}
