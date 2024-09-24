@@ -1,0 +1,89 @@
+.inputWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  & input {
+    border-color: var(--color-error-red);
+  }
+  & svg {
+    color: var(--color-error-red-accent);
+  }
+
+  & .inputText:focus {
+    border-color: var(--color-error-red-border);
+    box-shadow: 0px 0px 0px 4px var(--color-error-shadow);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  border-color: var(--color-gray-600);
+
+  & input {
+    color: var(--color-gray-700);
+  }
+}
+
+.inputText {
+  width: 100%;
+  background-color: var(--color-gray-900);
+  border: 1px solid var(--color-gray-600);
+  border-radius: 4px;
+  outline: 1px transparent;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.quiet input {
+  border-color: transparent;
+}
+
+.iconLeft,
+.iconRight {
+  color: var(--color-gray-500);
+  position: absolute;
+  display: grid;
+  place-content: center;
+}
+
+.iconLeft {
+  left: 12px;
+}
+
+.iconRight {
+  right: 12px;
+}
+
+.inputWrapper .iconLeft ~ .inputText {
+  padding-left: 36px;
+}
+
+.inputWrapper .iconRight ~ .inputText {
+  padding-right: 36px;
+}
+
+.inputText:focus {
+  border-color: var(--color-active-border);
+  box-shadow: 0px 0px 0px 4px rgba(46, 144, 250, 0.24);
+}
+
+.xs {
+  & input {
+    padding: 2px 12px;
+  }
+}
+
+.l input {
+  padding: 8px 12px 8px 16px;
+  font-size: 14px;
+}
+
+.xl input {
+  padding: 10px 12px 10px 16px;
+  font-size: 14px;
+}
