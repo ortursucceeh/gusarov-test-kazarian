@@ -1,4 +1,4 @@
-.Form {
+.form {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -16,8 +16,8 @@
   inherits: false;
 }
 
-.Form::after,
-.Form::before {
+.form::after,
+.form::before {
   content: "";
   position: absolute;
   height: 102%;
@@ -32,12 +32,12 @@
   animation: 3s spin linear infinite;
 }
 
-.Form::before {
+.form::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
 
-.header {
+.formHeader {
   display: grid;
   place-content: center;
 

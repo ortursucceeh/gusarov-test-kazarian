@@ -1,4 +1,4 @@
-import styles from "./Form.module.css";
+import "./Form.css";
 
 import { Button } from "../Button";
 import { InputGroup } from "../InputGroup/InputGroup";
@@ -27,8 +27,8 @@ export const Form = () => {
   };
 
   return (
-    <form className={styles.Form} onSubmit={handleSubmit(submit)}>
-      <div className={styles.header}>
+    <form className="form" onSubmit={handleSubmit(submit)}>
+      <div className="formHeader">
         <h2>Login</h2>
         <p>Please enter your credentials to login</p>
       </div>

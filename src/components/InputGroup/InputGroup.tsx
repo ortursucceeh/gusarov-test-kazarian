@@ -1,6 +1,6 @@
 import { ChangeEvent, ReactNode } from "react";
 
-import styles from "./InputGroup.module.css";
+import "./InputGroup.css";
 import { SIZES } from "@/utils/constants";
 import type { FieldError } from "react-hook-form";
 import type { InputType } from "@/utils/types";
@@ -53,7 +53,7 @@ export const InputGroup = (props: InputGroupProps) => {
   } = props;
 
   return (
-    <div className={styles.inputGroup}>
+    <div className="inputGroup">
       <InputLabel
         id={id}
         label={label}
@@ -68,17 +68,18 @@ export const InputGroup = (props: InputGroupProps) => {
         type={inputType}
         placeholder={placeholder}
         iconLeft={iconLeft}
+        size={size}
         iconRight={iconRight}
         value={value}
         onChange={onChange}
-        error={error}
+        isError={!!error}
         isQuiet={isQuiet}
         disabled={disabled}
         required={required}
         {...rest}
       />
 
-      <InputAnnotation text={text} isError={!!error} disabled={disabled} />
+      <InputAnnotation text={text} size={size} isError={!!error} disabled={disabled} />
     </div>
   );
 };

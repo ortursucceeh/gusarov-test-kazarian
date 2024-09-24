@@ -1,6 +1,6 @@
-import clsx from "clsx";
+import classNames from "classnames";
 import { SIZES } from "@/utils/constants";
-import styles from "./InputLabel.module.css";
+import "./InputLabel.css";
 import { Info } from "lucide-react";
 
 type InputLabelProps = {
@@ -12,23 +12,20 @@ type InputLabelProps = {
   label: string;
 };
 
-// sm md - 12px lg xl - 14px
-
 export const InputLabel = (props: InputLabelProps) => {
   const { id, size, withHint, required, disabled, label } = props;
 
   return (
     <label
       htmlFor={id}
-      className={clsx(styles.inputLabel, {
-        [styles.L]: [SIZES.L, SIZES.XL].includes(size!),
-        [styles.required]: required,
-        [styles.disabled]: disabled,
+      className={classNames("inputLabel", {
+        inputLabelLarge: [SIZES.L, SIZES.XL].includes(size!),
+        inputLabelDisabled: disabled,
       })}
     >
       {label}
-      {!disabled && required && <i className={styles.asterisk}> *</i>}
-      {withHint && <Info size={12} className={styles.hint} />}
+      {!disabled && required && <i className="asterisk"> *</i>}
+      {withHint && <Info size={12} className="hint" />}
     </label>
   );
 };

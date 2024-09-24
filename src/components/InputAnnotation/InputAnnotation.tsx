@@ -1,6 +1,7 @@
-import clsx from "clsx";
+import "./InputAnnotation.css";
+
 import { SIZES } from "@/utils/constants";
-import styles from "./InputAnnotation.module.css";
+import classNames from "classnames";
 
 type InputAnnotationProps = {
   size?: SIZES;
@@ -14,10 +15,10 @@ export const InputAnnotation = (props: InputAnnotationProps) => {
 
   return (
     <span
-      className={clsx(styles.inputAnnotation, {
-        [styles.L]: [SIZES.L, SIZES.XL].includes(size!),
-        [styles.error]: isError,
-        [styles.disabled]: disabled,
+      className={classNames("inputAnnotation", {
+        inputAnnotationLarge: [SIZES.L, SIZES.XL].includes(size!),
+        inputAnnotationError: isError,
+        inputAnnotationDisabled: disabled,
       })}
     >
       {text}

@@ -1,4 +1,4 @@
-import styles from "./Button.module.css";
+import "./Button.css";
 
 type ButtonProps = { children: string; type?: "button" | "submit" };
 
@@ -6,7 +6,7 @@ export const Button = (props: ButtonProps) => {
   const { children } = props;
 
   return (
-    <button className={styles.Button} type="button">
+    <button className="button" type="button">
       {children}
     </button>
   );

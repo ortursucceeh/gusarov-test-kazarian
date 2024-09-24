@@ -4,15 +4,15 @@
   white-space: normal;
 }
 
-.L {
+.inputAnnotationLarge {
   font-size: 14px;
 }
 
-.error {
+.inputAnnotationError {
   color: var(--color-error-red);
 }
 
-.disabled {
+.inputAnnotationDisabled {
   color: var(--color-gray-700);
   pointer-events: none;
   cursor: not-allowed;

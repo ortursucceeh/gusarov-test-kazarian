@@ -1,7 +1,6 @@
 import { ChangeEvent, ReactNode } from "react";
-import styles from "./InputText.module.css";
-import { FieldError } from "react-hook-form";
-import clsx from "clsx";
+import "./InputText.css";
+import classNames from "classnames";
 import { InputType } from "@/utils/types";
 import { SIZES } from "@/utils/constants";
 
@@ -11,7 +10,7 @@ type InputTextProps = {
   placeholder?: string;
   iconLeft?: ReactNode;
   iconRight?: ReactNode;
-  error?: FieldError | undefined;
+  isError?: boolean;
   size?: SIZES;
   value: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -21,22 +20,22 @@ type InputTextProps = {
 };
 
 export const InputText = (props: InputTextProps) => {
-  const { iconLeft, iconRight, size, isQuiet, error, disabled, ...rest } = props;
+  const { iconLeft, iconRight, size, isQuiet, isError, disabled, ...rest } = props;
 
   return (
     <div
-      className={clsx(styles.inputWrapper, {
-        [styles.error]: !!error,
-        [styles.quiet]: isQuiet,
-        [styles.xs]: size === SIZES.XS,
-        [styles.l]: size === SIZES.L,
-        [styles.xl]: size === SIZES.XL,
-        [styles.disabled]: disabled,
+      className={classNames("inputWrapper", {
+        inputWrapperExraSmall: size === SIZES.XS,
+        inputWrapperLarge: size === SIZES.L,
+        inputWrapperExtraLarge: size === SIZES.XL,
+        inputWrapperQuiet: isQuiet,
+        inputWrapperError: !!isError,
+        inputWrapperDisabled: disabled,
       })}
     >
-      {iconLeft && <span className={styles.iconLeft}>{iconLeft}</span>}
-      {iconRight && <span className={styles.iconRight}>{iconRight}</span>}
-      <input className={styles.inputText} {...rest} />
+      {iconLeft && <span className="iconLeft">{iconLeft}</span>}
+      {iconRight && <span className="iconRight">{iconRight}</span>}
+      <input className="inputText" {...rest} />
     </div>
   );
 };
